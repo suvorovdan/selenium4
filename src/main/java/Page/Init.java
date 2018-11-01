@@ -1,6 +1,4 @@
 package Page;
-
-import Page.TestProperties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -25,6 +23,10 @@ public class Init {
             driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
             driver.get((String) TestProperties.getInstance().getProperties().get("app.url"));
 
+        }
+
+        public static void tearDown(){
+            driver.quit();
         }
 
 

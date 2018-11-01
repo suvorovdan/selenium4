@@ -1,6 +1,7 @@
 import Page.Init;
 import Page.OzonPageObject;
 import needsfortest.UserData;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -22,6 +23,10 @@ public class OzonePageObjectTest {
     public void start(){
         Init.startUp();
     }
+
+    @After
+    public void end(){ Init.tearDown();}
+
 
     @Test
     public void TestPageObject(){
