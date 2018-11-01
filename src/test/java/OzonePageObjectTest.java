@@ -12,8 +12,8 @@ public class OzonePageObjectTest {
         add("Чехол Black Rock Flex Carbon Case для Apple iPhone 8 Plus / 7 Plus / 6/6S Plus, цвет: черный");//
         add("Deppa Air Case чехол для Apple iPhone 7 Plus/8 Plus, Black");//
         add("Waves Protect чехол для iPhone 7 Plus/8 Plus, Black");//
-        add("Apple Leather Case чехол для iPhone 7 Plus/8 Plus, Black");//
-        add("Apple Silicone Case чехол для iPhone 7 Plus/8 Plus, Black");
+        add("Matchnine Cardla Slot Carbon Case чехол для iPhone 7 Plus/8 Plus, Black");
+        add("Apple Leather Case чехол для iPhone 7 Plus/8 Plus, Black");
     }};
 
 
@@ -26,8 +26,8 @@ public class OzonePageObjectTest {
     @Test
     public void TestPageObject(){
         OzonPageObject ozon = new OzonPageObject();
-        ozon.firstTimeLogin(user);
-        ozon.find("iPhone 7 Plus/8 Plus Black");
+        ozon.loginOnMainPage(user);
+        ozon.findOnMainPage("iPhone 7 Plus/8 Plus Black");
         ozon.addGoodsToBusket(goods);
         ozon.checkGoodsInCart(goods);
         ozon.deleteAllGoods();
