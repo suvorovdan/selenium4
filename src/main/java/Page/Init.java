@@ -15,7 +15,7 @@ public class Init {
 
         public static void startUp(){
             ChromeOptions options = new ChromeOptions();
-//            options.addArguments("--headless");
+            options.addArguments("--headless");
 //            options.addArguments("--window-size=1920,1080");
             System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
             driver = new ChromeDriver(options);
