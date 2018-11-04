@@ -12,13 +12,13 @@ public class OzonMainPage extends BasePage{
     private static final String patternForMenuAfterExit = "//span[contains(text(),'%s')]";
     int timeOut = 20;
 
-    @FindBy(xpath = "//div[contains(text(),'Вход')]")
+    @FindBy(xpath = "//*[contains(text(),'Вход')]")
     WebElement openMyOZONtoEnter;
 
     @FindBy(xpath = "//span[contains(text(),'Выйти')]")
     WebElement getOpenMyOZONtoExitFromMainPage;
 
-    @FindBy(xpath = "//div[contains(text(),'Мой OZON')]")
+    @FindBy(xpath = "//*[contains(text(),'Мой OZON')]")
     WebElement menu;
 
     @FindBy(xpath = "//a[contains(text(),'Войти')]")

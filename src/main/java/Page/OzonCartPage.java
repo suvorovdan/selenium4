@@ -1,5 +1,6 @@
 package Page;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -46,7 +47,8 @@ public class OzonCartPage extends BasePage {
                     .until(ExpectedConditions
                             .elementToBeClickable(emptyCart));
         }catch (org.openqa.selenium.NoSuchElementException e){
-            System.out.println(" корзина не пуста ");
+            Assert.assertNotEquals(" корзина не пуста ","","");
+//            System.err.println(" корзина не пуста ");
         }
     }
 
