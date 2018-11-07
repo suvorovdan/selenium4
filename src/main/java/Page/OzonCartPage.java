@@ -48,7 +48,6 @@ public class OzonCartPage extends BasePage {
                             .elementToBeClickable(emptyCart));
         }catch (org.openqa.selenium.NoSuchElementException e){
             Assert.assertNotEquals(" корзина не пуста ","","");
-//            System.err.println(" корзина не пуста ");
         }
     }
 

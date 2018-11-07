@@ -11,6 +11,11 @@ public class UserData {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return "пользователь: " + this.name + ", email: " + this.email;
+    }
+
     public String getEmail() {
         return email;
     }
